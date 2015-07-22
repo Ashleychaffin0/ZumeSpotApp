@@ -1,0 +1,170 @@
+div#homepage {
+ background-image: url("images/home2.png");
+ background-size : cover;
+ max-width: 1024px;
+ min-width: 320px;
+ min-height: 480px;
+}
+
+div#testvenuepage {
+	
+	background-size : cover;
+	max-width: 1024px;
+	min-width: 320px;
+	min-height: 480px;
+}
+
+#login {
+
+	width: 50%;
+	bottom: 4%;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	background: transparent;
+	
+}
+
+#venuestream img {
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	border-bottom: 1px solid rgba(255, 0, 0, 0.1);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius-radius: 5px;
+}
+
+#homeStreamContent {
+	
+	padding:0;
+}
+
+#homestream img {
+	display: block;
+	width: 100%;
+	border-width: 1px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+
+	background:
+    
+    linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(http://fc02.deviantart.net/fs71/i/2011/274/6/f/ocean__sky__stars__and_you_by_muddymelly-d4bg1ub.png);
+
+}
+
+.postInfo {
+
+	background-color: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+}
+
+
+
+#homestream .ui-block-a,#homestream .ui-block-b, #homestream .ui-block-c  {
+
+
+}
+
+#venuestream .ui-block-a, #venuestream .ui-block-b {
+	
+		padding: 2px;
+} 
+
+#venuestream .ui-block-c {
+	
+	margin-top: 7px;
+	margin-bottom: 7px;
+		margin:  0 auto;
+}
+
+.postText {
+	
+	margin-left: 5px;
+	padding-top:5px;
+	font-family:Palatino Linotype;
+	opacity: ;
+}
+
+.commentImg, .heartImg {
+	
+	width: 25px;
+	margin-top: 5px;
+	float: left;
+	
+}
+
+.commentImg {
+	
+	padding-left: 10px;
+	opacity: .5;
+	border-radius: 10px;
+
+}
+
+
+.heartImg {
+	
+	padding-left: 5px;
+}
+
+.numLikes, .numComments {
+	
+	float: left;
+	margin-top: 8px;
+	margin-left: 2px;
+	color: grey;
+	opacity: 0.8;
+	font-size: 15px;
+}
+
+.timeAgo{
+
+	float: right;
+	margin-top: 8px;
+	margin-right: 7px;
+	font-family:Palatino Linotype;
+	font-size: 15px;
+	color:red;
+
+}
+
+
+#venueHeaderText {
+	
+	color: white;
+	
+}
+
+.heartImg img {
+
+	content: url("images/heart.png");
+}
+
+.commentImg img {
+	content: url("images/comment.png");
+}
+
+.photoCaption {
+
+  position: absolute;
+  margin-top: -5.1em;
+  margin-left: 2.4em;
+
+}
+
+.distanceAway {
+
+	color:#fff;
+	font-size:15px;
+}

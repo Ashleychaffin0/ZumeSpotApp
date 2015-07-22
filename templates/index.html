@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <title>{{recent_media}}</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    
+    <link rel="stylesheet" href="{% static 'css/jquery.mobile.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/mystyles.css' %}" />
+    
+</head>
+<body>
+    
+    
+    <!-- Page: Home Screen -->
+    <div data-role="page" id="homepage">
+           
+        <!-- 
+        <a href="#testvenuepage"
+           data-transition="flip"
+           data-role="button"
+           id="login"
+           >Login With Instagram
+        </a>
+        -->
+        
+        <a href="#homestreampage"
+           data-transition="flip"
+           id="login"
+           onclick="listHomeStream()"
+           >
+           <img src="{% static 'css/images/sign-in-btn.png' %}" alt="Picture"></img>
+        </a>
+
+
+    </div>  <!-- END home screen -->
+    
+    
+    <!-- Page: Venue Stream -->
+    
+    <!--
+    <div id="testvenuepage" data-role="page" data-title="Venue Stream"
+        <div data-role="content">
+            <div id="venuestream" class="ui-grid-a">
+                <div data-role="header" id="venueHeader">
+                    <h1 id="venueHeaderText">Egg Slutty</h1>
+                    <a href="#homestreampage"
+                        data-icon="bars"
+                        data-iconpos="notext"
+                        >Home
+                    </a>
+                </div>
+                <div class="ui-block-a">
+                
+                    <a href="#">
+                        <img src="{% static 'img/1.jpg' %}">
+                    </a>
+                    
+                    <div class="postInfo">
+
+                        
+                        <div class="postText">Omg so Cool!</div>
+                        
+                        <div class="heartImg">
+                            <img style="border: 0;" src="{% static 'img/heart.png' %}">
+                        </div>
+                        
+                        <div class="numLikes">27</div>
+                        
+                        <div class="commentImg">
+                            <img style="border: 0;" src="{% static 'img/comment.png' %}">
+                        </div>
+                        
+                        <div class="numComments">7</div>
+                        
+                        <div class="timeAgo">
+                            <span data-livestamp="1431824700"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#">
+                        <img src="{% static 'img/2.jpg' %}">
+                    </a>
+                        <div class="postInfo">
+                            <div class="postText">Ordered the best tacos</div>
+                            
+                            <div class="heartImg">
+                                <img style="border: 0;" src="{% static 'img/heart.png' %}">
+                            </div>
+                            
+                            <div class="numLikes">3</div>
+                            
+                            <div class="commentImg">
+                                <img style="border: 0;" src="{% static 'img/comment.png' %}">
+                            </div>
+                            
+                            <div class="numComments">4</div>
+                            
+                            <div class="timeAgo">July 17, 2008</div>
+                            
+                        </div>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#">
+                        <img src="{% static 'img/3.jpg' %}">
+                    </a>
+                    <div class="postInfo">
+                        <div class="postText">@guisados is the best! We should come here mor.. </div>
+                        
+                        <div class="heartImg">
+                            <img style="border: 0;" src="{% static 'img/heart.png' %}">
+                        </div>
+                        
+                        <div class="numLikes">3</div>
+                        
+                        <div class="commentImg">
+                            <img style="border: 0;" src="{% static 'img/comment.png' %}">
+                        </div>
+                        
+                        <div class="numComments">4</div>
+                        
+                        <div class="timeAgo">5h 20m ago</div>
+                        
+                    </div>
+                </div>
+                <div class="ui-block-a">
+                    <a href="#">
+                        <img src="{% static 'img/4.jpg' %}">
+                    </a>
+                        <div class="postInfo">
+                            <div class="postInfo">
+                                <div class="postText">Look what we've got!</div>
+                            </div>
+                        </div>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#">
+                        <img src="{% static 'img/5.jpg' %}">
+                    </a>
+                        <div class="postInfo">
+                            <div class="postInfo">
+                                <div class="postText">This stuff is so yummy</div>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+                <div class="ui-block-c">
+                    <a href="#">
+                        <img src="{% static 'img/6.jpg' %}">
+                    </a
+                    <div class="postInfo">
+                        <div class="postInfo">
+                            <div class="postText">Ordered the best tacos</div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div> 
+        -->
+            <!-- END venuestream -->
+            
+        <!--
+        </div> -->
+
+   <!-- </div>--> <!-- END home stream -->
+    
+    
+    
+    <!-- Page: Venue Stream -->
+    <div id="venuepage" data-role="page" data-title="Venue Stream"
+        <div data-role="content">
+            <div id="venuestream" class="ui-grid-a">
+                <div data-role="header">
+                    <h1 id="venueHeader"></h1>
+                    <a href="#homestreampage"
+                        data-icon="bars"
+                        data-iconpos="notext"
+                        >Home
+                    </a>
+                </div>
+            </div> <!-- END venuestream -->
+            
+        </div><!-- END content -->  
+    </div><!-- END home stream -->
+    
+    
+    <!-- Page: Home Stream -->
+    <div data-role="page" id="homestreampage">
+        <div id="homeStreamContent" data-role="content">
+            <div id="homestream" class="ui-grid-b"              
+            </div> <!-- END homestream -->
+        </div>
+    </div>  <!-- END home screen -->
+    
+    
+    <!-- Cookie cutter jquery and jquery mobile -->
+    <script src="{% static 'js/jquery/jquery.js' %}"></script>
+    <script src="{% static 'js/jquery/jquery.mobile.js' %}"></script>
+    
+    <!-- Enables live time ago update on ZumeSpot posts -->
+    <script src="{% static 'js/plugins/moment.js' %}"></script>
+    <script src="{% static 'js/plugins/livestamp.js' %}"></script>
+
+    <!-- Custom script I wrote -->
+    <script src="{% static 'js/myscript.js' %}"></script>
+
+
+    
+    
+</body>
+</html>
